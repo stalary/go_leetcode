@@ -9,6 +9,7 @@ func main() {
 	fmt.Println(hammingDistance(1, 4))
 }
 
+// 求两个数的hamming距离
 func hammingDistance(x int, y int) int {
 	// 异或操作
 	or := x ^ y

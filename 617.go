@@ -22,6 +22,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+// 合并两颗二叉树
 func mergeTrees(t1 *TreeNode, t2 *TreeNode) *TreeNode {
 	if t1 == nil && t2 == nil {
 		return nil

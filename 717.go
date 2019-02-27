@@ -6,6 +6,7 @@ func main() {
 	fmt.Println(numJewelsInStones("aA", "aAAZZzz"))
 }
 
+// 求S共包含J中多少个元素
 func numJewelsInStones(J string, S string) int {
 	// 申请一个map，统计出现过的字符(使用int32存储)
 	jewels := make(map[rune]bool)

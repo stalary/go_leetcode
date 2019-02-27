@@ -6,6 +6,7 @@ func main() {
 
 }
 
+// 计算二叉树的最大深度
 func maxDepth(root *TreeNode) int {
 	if root == nil {
 		return 0

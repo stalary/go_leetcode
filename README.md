@@ -1,2 +1,2 @@
 # go_leetcode
-use go do exercise
+使用go语言完成leecode中的top100

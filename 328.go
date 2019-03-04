@@ -2,6 +2,7 @@ package main
 
 import "stalary/study"
 
+// append even list to odd list
 func oddEvenList(head *study.ListNode) *study.ListNode {
 	if head == nil || head.Next == nil {
 		return head

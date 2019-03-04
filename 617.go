@@ -19,7 +19,7 @@ func main() {
 	fmt.Println(mergeTrees(t1, t2))
 }
 
-// 合并两颗二叉树
+// merge two trees
 func mergeTrees(t1 *study.TreeNode, t2 *study.TreeNode) *study.TreeNode {
 	if t1 == nil && t2 == nil {
 		return nil
@@ -30,11 +30,11 @@ func mergeTrees(t1 *study.TreeNode, t2 *study.TreeNode) *study.TreeNode {
 	if t2 == nil {
 		return t1
 	}
-	// 对当前节点求和
+	// sum cur node
 	t1.Val += t2.Val
-	// 递归左节点
+	// count left nodes
 	t1.Left = mergeTrees(t1.Left, t2.Left)
-	// 递归右节点
+	// count right nodes
 	t1.Right = mergeTrees(t1.Right, t2.Right)
 	return t1
 }

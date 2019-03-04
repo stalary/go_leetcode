@@ -24,6 +24,7 @@ func main() {
 	fmt.Println(inorderTraversal(root))
 }
 
+// inorder traversal tree
 func inorderTraversal(root *study.TreeNode) []int {
 	ret := make([]int, 0)
 	if root == nil {

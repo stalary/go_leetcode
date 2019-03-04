@@ -8,20 +8,20 @@ func main() {
 	fmt.Println(nums)
 }
 
-// 将0移动到最后
+// move 0 to end
 func moveZeroes(nums []int) {
-	// 记录数组长度
+	// len
 	l := len(nums)
-	// 记录移动到的下标
+	// record index
 	pos := 0
 	for _, n := range nums {
-		// 不等于0时写入数组
+		// not 0 write array
 		if n != 0 {
 			nums[pos] = n
 			pos++
 		}
 	}
-	// 写入等于0的元素
+	// write 0
 	for i := pos; i < l; i++ {
 		nums[i] = 0
 	}

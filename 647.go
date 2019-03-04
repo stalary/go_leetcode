@@ -6,15 +6,15 @@ func main() {
 	fmt.Println(countSubstrings("aaa"))
 }
 
-// 统计回文子串的数量
+// count palindrome substrings
 func countSubstrings(s string) int {
 	total := 0
 	for mid := 0; mid < len(s); mid++ {
-		// 判断多个元素的
+		// count multiple elements
 		left := mid
 		right := mid + 1
 		total = help(s, left, right, total)
-		// 判断单个元素
+		// count one element
 		left = mid
 		right = mid
 		total = help(s, left, right, total)

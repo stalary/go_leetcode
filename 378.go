@@ -7,23 +7,23 @@ func main() {
 	fmt.Println(kthSmallest(matrix, 2))
 }
 
-// 查找矩阵中第k小的数字
+// find matrix kth smallest number
 func kthSmallest(matrix [][]int, k int) int {
-	// 行数
+	// the number of rows
 	n := len(matrix)
-	// 最小值
+	// low
 	lo := matrix[0][0]
-	// 最大值
+	// high
 	hi := matrix[n-1][n-1]
 	var mid, count int
 
 	for lo < hi {
-		// 求出中位数
+		// mid
 		mid = lo + (hi-lo)/2
-		// 计算小于中位数的数量
+		// count less or equal mid
 		count = countLEQ(matrix, mid)
 
-		// 当数量低于k时，最小值增大
+		// min++ when count less than k
 		if count < k {
 			lo = mid + 1
 		} else {

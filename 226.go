@@ -1,19 +1,21 @@
 package main
 
+import "stalary/study"
+
 func main() {
 
 }
 
-// 交换二叉树左右节点
-func invertTree(root *TreeNode) *TreeNode {
+// exchange tree left and right node
+func invertTree(root *study.TreeNode) *study.TreeNode {
 	if root == nil {
 		return nil
 	}
-	// 先对当前左右节点进行交换
+	// exchange cur node
 	temp := root.Left
 	root.Left = root.Right
 	root.Right = temp
-	// 递归交换子节点
+	// exchange child node
 	invertTree(root.Left)
 	invertTree(root.Right)
 	return root

@@ -1,14 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"stalary/study"
+)
 
 func main() {
-	t1 := &TreeNode{
+	t1 := &study.TreeNode{
 		Val:   1,
 		Left:  nil,
 		Right: nil,
 	}
-	t2 := &TreeNode{
+	t2 := &study.TreeNode{
 		Val:   2,
 		Left:  nil,
 		Right: nil,
@@ -16,14 +19,8 @@ func main() {
 	fmt.Println(mergeTrees(t1, t2))
 }
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 // 合并两颗二叉树
-func mergeTrees(t1 *TreeNode, t2 *TreeNode) *TreeNode {
+func mergeTrees(t1 *study.TreeNode, t2 *study.TreeNode) *study.TreeNode {
 	if t1 == nil && t2 == nil {
 		return nil
 	}

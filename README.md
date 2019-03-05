@@ -1,2 +1,4 @@
 # go_leetcode
-使用go语言完成leecode中的top100
+Complete leetcode with go
+
+Most of them are top100
